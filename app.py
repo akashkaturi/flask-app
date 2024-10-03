@@ -6,8 +6,9 @@ import os
 # Initialize app
 app = Flask(__name__)
 
-# MySQL Configuration
+# uncomment the next line for MySQL Configuration
 # app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+# uncomment the next line for sqlite db
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
